@@ -1,1 +1,1 @@
-<img src="https://oege.ie.hva.nl/~westere6/techtrack/suriname-2.jpg" alt="logo" width="500px">
+<img src="https://oege.ie.hva.nl/~westere6/techtrack/suriname-3.jpg" alt="logo" width="500px">
