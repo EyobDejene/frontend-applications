@@ -23,6 +23,24 @@ Doormiddel van SparQL queries zal er RDF-gebaseerde data zoekopdrachten worden a
 ## Device ondersteuning
 -
 
+# Wiki
+Lees [wiki](https://github.com/EyobDejene/frontend-applications/wiki) voor het gehele process. 
+
+
+## Built With
+
+* [NodeJS](https://nodejs.org/en/) - JavaScript runtime built on Chrome's V8 JavaScript engine
+* [Nodemon](https://nodemon.io/) - Restart automatically your server
+
+## Live versie
+-
+
+
+## Installatie applicatie
+-
+
+## Installatie ember
+
 
 
 
