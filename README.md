@@ -15,7 +15,7 @@ Door de aandacht te vestigen op de verschillende soorten Surinaamse doeken wil i
 De applicatie is voor een iedere die geïnteresseerd is in de slavernij geschiedenis van Suriname.
 
 ## Data gebruik
-Data die binnen de applicatie is afkomstig van het NMVW. Het NMVW stelt de data tot beschikking en zal worden gebruik om  object informatie uit te lezen die in relatie staan met Surinaamse kledij.
+Data die binnen de applicatie wordt gebruikt is afkomstig van het NMVW. Het NMVW stelt de data ter beschikking en zal worden gebruik om object informatie uit te lezen die in relatie staan met Surinaamse kledij.
 
 ## Data techniek
 Doormiddel van SparQL queries zal er RDF-gebaseerde data zoekopdrachten worden aangevraagd. Met deze techniek is het mogelijk om informatie op te vragen uit de collectie van wereldculturen.
