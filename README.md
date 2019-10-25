@@ -1,48 +1,57 @@
-# Angisa Tori
-Ontdek de geheimen achter de surinaamse hoofddoeken.
+# frontend-applications
 
-<img src="https://oege.ie.hva.nl/~westere6/techtrack/angisa.jpg" alt="logo">
+This README outlines the details of collaborating on this Ember application.
+A short introduction of this app could easily go here.
 
-## Concept
-De angisa is een typisch Surinaams kledingstuk. Dit hoofddeksel geldt als het belangrijkst onderdeel van de Surinaams Creoolse klederdracht en is veel meer dan een mooi of functioneel hoofddeksel.
-Door bepaalde vouwtechnieken ontstaan kunstzinnige hoofdcreaties met bijbehorende namen en boodschappen.
-De angisa brengt vele verhalen met zich mee, overleveringen en levenswijsheden. Deze hoofddoek fungeerde in de tijd van de koloniale overheersing als communicatiemiddel en bevatte verborgen boodschappen over de draagster. Middels het dragen van de angisa kon de draagster non-verbaal communiceren met haar omgeving bijvoorbeeld over haar gemoedstoestand, haar liefdes en sociale positie.
-Door de aandacht te vestigen op de verschillende soorten Surinaamse doeken wil ik het koloniale verleden van Nederland  verbinden met de bezoekers van Het Nationaal Museum van Wereldculturen. Doormiddel van een interactieve applicatie wil ik de boodschap achter verschillende angisa doeken onthullen. 
+## Prerequisites
 
-<img src="https://oege.ie.hva.nl/~westere6/techtrack/herdenkingsstof.jpg" alt="herdenkingsstof">
+You will need the following things properly installed on your computer.
 
-## Doelgroep van applicatie
-De applicatie is voor een iedere die geïnteresseerd is in de slavernij geschiedenis van Suriname.
+* [Git](https://git-scm.com/)
+* [Node.js](https://nodejs.org/) (with npm)
+* [Ember CLI](https://ember-cli.com/)
+* [Google Chrome](https://google.com/chrome/)
 
-## Data gebruik
-Data die binnen de applicatie wordt gebruikt is afkomstig van het NMVW. Het NMVW stelt de data ter beschikking en zal worden gebruik om object informatie uit te lezen die in relatie staan met Surinaamse kledij.
+## Installation
 
-## Data techniek
-Doormiddel van SparQL queries zal er RDF-gebaseerde data zoekopdrachten worden aangevraagd. Met deze techniek is het mogelijk om informatie op te vragen uit de collectie van wereldculturen.
+* `git clone <repository-url>` this repository
+* `cd frontend-applications`
+* `npm install`
 
-## Device ondersteuning
--
+## Running / Development
 
-# Wiki
-Lees [wiki](https://github.com/EyobDejene/frontend-applications/wiki) voor het gehele process. 
+* `ember serve`
+* Visit your app at [http://localhost:4200](http://localhost:4200).
+* Visit your tests at [http://localhost:4200/tests](http://localhost:4200/tests).
 
+### Code Generators
 
-## Built With
+Make use of the many generators for code, try `ember help generate` for more details
 
-* [NodeJS](https://nodejs.org/en/) - JavaScript runtime built on Chrome's V8 JavaScript engine
-* [Nodemon](https://nodemon.io/) - Restart automatically your server
+### Running Tests
 
-## Live versie
--
+* `ember test`
+* `ember test --server`
 
+### Linting
 
-## Installatie applicatie
--
+* `npm run lint:hbs`
+* `npm run lint:js`
+* `npm run lint:js -- --fix`
 
-## Installatie ember
+### Building
 
+* `ember build` (development)
+* `ember build --environment production` (production)
 
+### Deploying
 
+Specify what it takes to deploy your app.
 
+## Further Reading / Useful Links
 
-
+* [ember.js](https://emberjs.com/)
+* [ember-cli](https://ember-cli.com/)
+* Development Browser Extensions
+  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
+  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
