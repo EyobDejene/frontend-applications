@@ -23,9 +23,11 @@ Doormiddel van SparQL queries zal er RDF-gebaseerde data zoekopdrachten worden a
 ## Device ondersteuning
 Alle devices die Google Chrome ondersteunen zullen de applicatie kunnen gebruiken.
 
-# Wiki
+## Wiki
 Lees [wiki](https://github.com/EyobDejene/frontend-applications/wiki) voor het gehele process. 
 
+## Live versie
+Link naar applicatie []
 
 
 ## Prerequisites
