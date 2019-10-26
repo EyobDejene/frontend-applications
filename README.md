@@ -4,34 +4,26 @@ Ontdek de geheimen achter de Surinaamse hoofddoeken.
 <img src="https://oege.ie.hva.nl/~westere6/techtrack/angisa.jpg" alt="logo">
 
 ## Concept
-De angisa is een typisch Surinaams kledingstuk. Dit hoofddeksel geldt als het belangrijkst onderdeel van de Surinaams Creoolse klederdracht en is veel meer dan een mooi of functioneel hoofddeksel.
-Door bepaalde vouwtechnieken ontstaan kunstzinnige hoofdcreaties met bijbehorende namen en boodschappen.
-De angisa brengt vele verhalen met zich mee, overleveringen en levenswijsheden. Deze hoofddoek fungeerde in de tijd van de koloniale overheersing als communicatiemiddel en bevatte verborgen boodschappen over de draagster. Middels het dragen van de angisa kon de draagster non-verbaal communiceren met haar omgeving bijvoorbeeld over haar gemoedstoestand, haar liefdes en sociale positie.
-Door de aandacht te vestigen op de verschillende soorten Surinaamse doeken wil ik het koloniale verleden van Nederland  verbinden met de bezoekers van Het Nationaal Museum van Wereldculturen. Doormiddel van een interactieve applicatie wil ik de boodschap achter verschillende angisa doeken onthullen. 
+The angisa is a typical Surinamese garment. This headpiece is considered the most important part of Surinamese Creole costume and is much more than a beautiful functional headpiece. Certain folding techniques result in artistic main creations with corresponding names and messages. The angisa brings many stories, traditions and wisdoms with it. This headscarf functioned as a means of communication during colonial rule and contained hidden messages about the wearer. Wearing the angisa allowed the wearer to communicate non-verbally with her environment, for example about her state of mind, her love and social position. By drawing attention to the different types of Surinamese canvases, I want to connect the colonial past of the Netherlands with the visitors of The National Museum of World Cultures. By means of an interactive application I want to reveal the message behind different angisa canvases.
 
 <img src="https://oege.ie.hva.nl/~westere6/techtrack/herdenkingsstof.jpg" alt="herdenkingsstof">
 
-## Doelgroep van applicatie
-De applicatie is voor een iedere die geïnteresseerd is in de slavernij geschiedenis van Suriname.
+## Target audience of application
+The application is for anyone who is interested in the slavery history of Suriname.
 
-## Data gebruik
-Data die binnen de applicatie wordt gebruikt is afkomstig van het NMVW. Het NMVW stelt de data ter beschikking en zal worden gebruik om object informatie uit te lezen die in relatie staan met Surinaamse kledij.
+## Data usage
+Data used within the application comes from the NMVW. The NMVW makes the data available and will be used to read object information that is related to Surinamese clothing.
 
-## Data techniek
-Doormiddel van SparQL queries zal er RDF-gebaseerde data zoekopdrachten worden aangevraagd. Met deze techniek is het mogelijk om informatie op te vragen uit de collectie van wereldculturen.
-
-## Device ondersteuning
-Alle devices die Google Chrome ondersteunen zullen de applicatie kunnen gebruiken.
+## Data processing
+Through SparQL queries (RDF-based data) searches will be requested. With this technique it is possible to request certain information from the collection of world cultures.
 
 ## Wiki
 Lees [wiki](https://github.com/EyobDejene/frontend-applications/wiki) voor het gehele process. 
 
-## Live versie
-Link naar applicatie []
-
+## Live version
+Link to application []
 
 ## Prerequisites
-
 You will need the following things properly installed on your computer.
 
 * [Git](https://git-scm.com/)
