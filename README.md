@@ -17,6 +17,32 @@ Data used within the application comes from the NMVW. The NMVW makes the data av
 ## Data processing
 Through SparQL queries (RDF-based data) searches will be requested. With this technique it is possible to request certain information from the collection of world cultures.
 
+```
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+        PREFIX dc: <http://purl.org/dc/elements/1.1/>
+        PREFIX dct: <http://purl.org/dc/terms/>
+        PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+        PREFIX edm: <http://www.europeana.eu/schemas/edm/>
+        PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+
+        SELECT ?cho ?title ?placeName ?type ?createdDate ?imageLink WHERE {
+            <https://hdl.handle.net/20.500.11840/termmaster5986> skos:narrower* ?place .
+            ?place skos:prefLabel ?placeName .
+
+            VALUES ?type { "Hoofddoek" "hoofddoek" "Angisa" "angisa" "Headgear" "headgear" "hoofddeksel" "Hoofddeksel" "Hoofddeksels" "hoofddeksels"}
+
+            ?cho dct:spatial ?place.
+            ?cho dc:title ?title.
+            ?cho dct:created ?createdDate.
+            ?cho foaf:depiction ?imageLink.
+            ?cho dc:type ?type .
+                FILTER langMatches(lang(?title), "ned")
+        }
+        LIMIT 20
+```
+## Features
+...
+
 ## Wiki
 Lees [wiki](https://github.com/EyobDejene/frontend-applications/wiki) voor het gehele process. 
 
