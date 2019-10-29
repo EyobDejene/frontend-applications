@@ -40,6 +40,8 @@ PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
         }
         LIMIT 20
 ```
+## Features
+...
 
 ## Wiki
 Lees [wiki](https://github.com/EyobDejene/frontend-applications/wiki) voor het gehele process. 
