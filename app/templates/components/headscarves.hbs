@@ -1,11 +1,11 @@
 <Filter/>
-<div class="container">
-    <div class="glide">
+<div class="wrap">
+
         <div data-glide-el="track" class="glide__track">
-            <ul class="glide__slides">
+            <ul class="glide__slides carousel">
                 {{#each @headscarves as |headscarf|}}
-                    <li data-id="{{headscarf.id}}" class="glide__slide objectItem">
-                        <h1>{{headscarf.id}}</h1>
+                    <li data-id="{{headscarf.id}}" class="glide__slide objectItem carousel-seat">
+                        <!--<h1>{{headscarf.id}}</h1>-->
                         <a href="/headscarf/{{headscarf.id}}">
                         <div class="imageHolder">
                             <img src="assets/images/imageproxy.jpeg" alt="" />
@@ -20,7 +20,6 @@
                 {{/each}}
             </ul>
         </div>
-    </div>
 </div>
 
 <script src="{{rootURL}}assets/js/script.js"></script>
