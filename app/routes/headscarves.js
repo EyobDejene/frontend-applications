@@ -40,13 +40,17 @@ export default Route.extend({
         LIMIT 20
         `;
 
+        let categories = ["slavery","celebration","danger","emotion"];
+
 
         // handle data
         const handleData = (json) =>{
             let bindings =  json.results.bindings;
             for (let i=0; i < bindings.length; i++){
+                var num = Math.floor( Math.random() * categories.length );
                 let objectItem = bindings[i];
                 objectItem.id = i;
+                objectItem.category = categories[num];
                 objectItem.cho = objectItem.cho.value;
                 objectItem.placeName = objectItem.placeName.value;
                 objectItem.title = objectItem.title.value;

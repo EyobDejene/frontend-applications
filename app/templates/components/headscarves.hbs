@@ -1,12 +1,15 @@
+<Filter/>
 <div class="container">
     <div class="glide">
         <div data-glide-el="track" class="glide__track">
             <ul class="glide__slides">
                 {{#each @headscarves as |headscarf|}}
-                    <li class="glide__slide">
+                    <li data-id="{{headscarf.id}}" class="glide__slide objectItem">
+                        <h1>{{headscarf.id}}</h1>
                         <a href="/headscarf/{{headscarf.id}}">
                         <div class="imageHolder">
                             <img src="assets/images/imageproxy.jpeg" alt="" />
+                            <!--<img src="{{headscarf.imageLink}}" alt="" />-->
                         </div>
 
                         <!--<h1>{{headscarf.title}}</h1>-->
