@@ -1,5 +1,8 @@
 import Route from '@ember/routing/route';
-//import fetch from "fetch";
+import fetch from "fetch";
+
+
+
 
 export default Route.extend({
 
@@ -43,6 +46,7 @@ export default Route.extend({
             let bindings =  json.results.bindings;
             for (let i=0; i < bindings.length; i++){
                 let objectItem = bindings[i];
+                objectItem.id = i;
                 objectItem.cho = objectItem.cho.value;
                 objectItem.placeName = objectItem.placeName.value;
                 objectItem.title = objectItem.title.value;
@@ -51,14 +55,25 @@ export default Route.extend({
                 // objectItem.description = objectItem.description.value;
                 objectItem.imageLink = objectItem.imageLink.value;
             }
+            localStorage.setItem('museum_objects', JSON.stringify(bindings));
             return bindings
         };
 
-        // fetch data
-        return fetch(url+'?query='+encodeURIComponent(query)+'&format=json')
-            .then(res => res.json())
-            .then(handleData)
-            .catch(err => console.error(err));
+        // check if object found in localstorage
+        if(localStorage.getItem('museum_objects') ===  null){
+            // fetch data
+            return fetch(url+'?query='+encodeURIComponent(query)+'&format=json')
+                .then(res => res.json())
+                .then(handleData)
+                .catch(err => console.error(err));
+        }else{
+            // return the objects
+            console.log('object bestaat');
+            return JSON.parse(localStorage.getItem('museum_objects'));
+        }
+
+
+
     }
 
 });

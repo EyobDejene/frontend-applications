@@ -2,7 +2,7 @@ import Application from '@ember/application';
 import Resolver from './resolver';
 import loadInitializers from 'ember-load-initializers';
 import config from './config/environment';
-import fetch from "fetch";
+
 
 const App = Application.extend({
   modulePrefix: config.modulePrefix,
