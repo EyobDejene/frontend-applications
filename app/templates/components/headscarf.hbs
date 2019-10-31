@@ -1,18 +1,25 @@
-<a href="/headscarves" class="navigation">Terug</a>
+{{#link-to "headscarves" class="navigation"}}
+    Back to collection
+{{/link-to}}
 <article>
     <header>
         <h1>{{headscarf.title}}</h1>
     </header>
-    <p><b>Create date:</b> {{headscarf.createdDate}}</p>
+    <p>Origin: {{headscarf.createdDate}}</p>
+    <div class="content">
+        <div class="content-item">
+        <figure>
+            <!--<img src="{{headscarf.imageLink}}" alt="" />-->
+            <img src="../assets/images/imageproxy.jpeg" alt="" />
+            <!--<img src="../assets/images/imageproxy.jpeg" alt="" />-->
+        </figure>
 
-    <figure>
-        <!--<img src="{{headscarf.imageLink}}" alt="" />-->
-        <img src="../assets/images/imageproxy.jpeg" alt="" />
-        <!--<img src="../assets/images/imageproxy.jpeg" alt="" />-->
-    </figure>
-<!--<img src="{{headscarf.imageLink}}" width="200" alt="" />-->
+        <div class="description">
+            <p>{{headscarf.description}}</p>
+        </div>
 
-<!--<p>{{headscarf.imageLink}}</p>-->
+        </div>
+    </div>
 
 </article>
 

@@ -41,6 +41,8 @@ export default Route.extend({
         `;
 
         let categories = ["slavery","celebration","danger","emotion"];
+        let dummyDescription = "The angisa is a typical Surinamese garment. This headgear is the most important part of Surinamese Creole costume and is much more than a beautiful or functional headgear. Certain folding techniques result in artistic main creations with corresponding names and messages. The angisa brings many stories, traditions and wisdoms with it. This headscarf functioned as a means of communication during colonial rule and contained hidden messages about the wearer. Wearing the angisa allowed the wearer to communicate non-verbally with her environment, for example about her state of mind, her love and social position.";
+        //let images = ["flag1.png","flag2.png","flag3.png","flag4.png"];
 
 
         // handle data
@@ -52,6 +54,7 @@ export default Route.extend({
                 objectItem.id = i;
                 objectItem.category = categories[num];
                 objectItem.cho = objectItem.cho.value;
+                objectItem.description = dummyDescription;
                 objectItem.placeName = objectItem.placeName.value;
                 objectItem.title = objectItem.title.value;
                 objectItem.type = objectItem.type.value;

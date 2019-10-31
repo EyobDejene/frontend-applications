@@ -16,7 +16,7 @@
 // search on keyname in object array
 function search(nameKey, array){
     let newArray = [];
-    for (var i=0; i < array.length; i++) {
+    for (let i=0; i < array.length; i++) {
 
         if (array[i].category === nameKey) {
             // console.log( array[i].category);
@@ -32,17 +32,22 @@ function search(nameKey, array){
 }
 
 // check filter value and run search function
-function val() {
+function Filter() {
     let array = JSON.parse(localStorage.getItem('museum_objects'));
     let filterValue = document.getElementById("filter").value;
+    let results = document.querySelector(".results");
+    let resultsCounter = document.querySelector("#resultsCounter");
+
+    //show filter counter
+    results.classList.remove("hide");
+    results.classList.add("show");
 
     if(filterValue != "default") {
         search(filterValue, array);
-
         let arrayFilterd = JSON.parse(localStorage.getItem('museum_objects_filterd'));
         let filter = document.getElementById("filter");
 
-        console.log(filterValue);
+       // console.log(filterValue);
 
         filter.classList.add("active");
 
@@ -54,18 +59,25 @@ function val() {
             }
 
             // loop trough all filtered objects and addd show class
-            for (var i = 0; i < arrayFilterd.length; i++) {
+            for (let i = 0; i < arrayFilterd.length; i++) {
                 // console.log(arrayFilterd[i].id);
                 document.querySelector("[data-id='" + arrayFilterd[i].id + "']").classList.add("show");
                 //console.log(document.querySelectorAll("[data-id='"+arrayFilterd[i].id+"']").classList);
             }
         }
 
+        // place results counter
+        let CountArrayFilterd = arrayFilterd.length;
+       // console.log(resultsCounter.innerHTML);
+        resultsCounter.innerHTML = CountArrayFilterd;
+
+
         // loop through elements in dom and if the element contains a show class remove the class and add hide class
         let objectsItems = document.getElementsByClassName("objectItem");
+       // console.log("deze"+objectsItems.length);
         for (let counter = 0; counter < objectsItems.length; counter++) {
             console.log(objectsItems[counter].classList);
-            console.log(objectsItems[i].classList.contains('show'));
+            console.log(objectsItems[counter].classList.contains('show'));
             if (!objectsItems[counter].classList.contains('show')) {
                 objectsItems[counter].classList.remove("show");
                 objectsItems[counter].classList.add("hide");
@@ -75,7 +87,15 @@ function val() {
        // console.log(filterValue)
         setSelectedIndex(filter, filterValue);
     }else{
+
+        // Count all museum objects in localstorage and place in results counter
+        let CountArray = JSON.parse(localStorage.getItem('museum_objects')).length;
+        // console.log(resultsCounter.innerHTML);
+        resultsCounter.innerHTML = CountArray;
         resetToVisible();
+
+        results.classList.remove("hide");
+        results.classList.add("show");
     }
 
 
@@ -88,6 +108,10 @@ function resetToVisible(){
     console.log('reset');
     let filter = document.getElementById("filter");
     let objectsItems = document.getElementsByClassName("objectItem");
+    let results = document.querySelector(".results");
+
+    results.classList.remove("show");
+    results.classList.add("hide");
     for (let counter = 0; counter < objectsItems.length; counter++) {
         //console.log(x[i].classList);
         //console.log(x[i].classList.contains('show'));
@@ -102,19 +126,20 @@ function resetToVisible(){
 
 
 
-function setSelectedIndex(s, v) {
+function setSelectedIndex(selected, value) {
 
-    for ( var i = 0; i < s.options.length; i++ ) {
-
-        if ( s.options[i].value == v ) {
-            s.options[i].selected = true;
+    // add select attr on select item
+    for ( let i = 0; i < selected.options.length; i++ ) {
+        if ( selected.options[i].value == value ) {
+            selected.options[i].selected = true;
             return;
-
         }
-
     }
-
 }
+
+
+
+
 
 
 
