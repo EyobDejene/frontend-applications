@@ -1,0 +1,28 @@
+<Filter/>
+
+<section>
+    <header>
+        <h1>Angisa tori</h1>
+        <h2>Discover the secrets of the angisa</h2>
+    </header>
+
+    <div class="wrap">
+        <ul class="carousel">
+            {{#each @headscarves as |headscarf|}}
+                <li data-id="{{headscarf.id}}" class="objectItem carousel-seat">
+                    <!--<h1>{{headscarf.id}}</h1>-->
+                    <a href="/headscarf/{{headscarf.id}}">
+                        <div class="imageHolder">
+                            <img src="assets/images/imageproxy.jpeg" alt="" />
+                            <!--<img src="{{headscarf.imageLink}}" alt="" />-->
+                        </div>
+
+                        <!--<h1>{{headscarf.title}}</h1>-->
+                        <!--<span>{{headscarf.createdDate}}</span>-->
+                        <!--<span>{{headscarf.imageLink}}</span>-->
+                    </a>
+                </li>
+            {{/each}}
+        </ul>
+    </div>
+</section>

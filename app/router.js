@@ -7,6 +7,9 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function() {
+  this.route('headscarves');
+  //this.route('headscarf');
+    this.route('headscarf', { path: 'headscarf/:id' });
 });
 
 export default Router;
