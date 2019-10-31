@@ -7,7 +7,7 @@ This application will show you the meaning of a certain angisa.
 ## Concept
 The angisa is a typical Surinamese garment. This headpiece is considered the most important part of Surinamese Creole costume and is much more than a beautiful functional headpiece. Certain folding techniques result in artistic main creations with corresponding names and messages. The angisa brings many stories, traditions and wisdoms with it. This headscarf functioned as a means of communication during colonial rule and contained hidden messages about the wearer. Wearing the angisa allowed the wearer to communicate non-verbally with her environment, for example about her state of mind, her love and social position. By drawing attention to the different types of Surinamese canvases, I want to connect the colonial past of the Netherlands with the visitors of The National Museum of World Cultures. By means of an interactive application I want to reveal the message behind different angisa canvases.
 
-<img src="https://oege.ie.hva.nl/~westere6/techtrack/herdenkingsstof.jpg" alt="herdenkingsstof">
+<img src="https://oege.ie.hva.nl/~westere6/techtrack/concept.jpg" alt="concept">
 
 ## Live demo
 [You can find the live demo here](https://tropenmuseum.herokuapp.com/headscarves)
