@@ -57,12 +57,14 @@ export default Route.extend({
                 // objectItem.description = objectItem.description.value;
                 objectItem.imageLink = objectItem.imageLink.value;
             }
+            //store bindings in localstorage
             localStorage.setItem('museum_objects', JSON.stringify(bindings));
             return bindings
         };
 
         // check if object found in localstorage
         if(localStorage.getItem('museum_objects') ===  null){
+
             // fetch data
             return fetch(url+'?query='+encodeURIComponent(query)+'&format=json')
                 .then(res => res.json())
