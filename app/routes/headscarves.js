@@ -8,11 +8,6 @@ export default Route.extend({
 
     model() {
 
-        // const instruments = {
-        //     "title":"hoofdoek1", "createdDate":"1960", "imageLink":"foto.jpg"
-        // }
-        // console.log(instruments);
-        // return instruments;
 
         // setup api url and query
         const url =    'https://api.data.netwerkdigitaalerfgoed.nl/datasets/ivo/NMVW/services/NMVW-27/sparql';
@@ -49,7 +44,7 @@ export default Route.extend({
         const handleData = (json) =>{
             let bindings =  json.results.bindings;
             for (let i=0; i < bindings.length; i++){
-                var num = Math.floor( Math.random() * categories.length );
+                let num = Math.floor( Math.random() * categories.length );
                 let objectItem = bindings[i];
                 objectItem.id = i;
                 objectItem.category = categories[num];
@@ -75,7 +70,7 @@ export default Route.extend({
                 .catch(err => console.error(err));
         }else{
             // return the objects
-            console.log('object bestaat');
+            console.log('object bestaat en hoeft niet worden ogeslagen in localstorage');
             return JSON.parse(localStorage.getItem('museum_objects'));
         }
 
