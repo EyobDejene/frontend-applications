@@ -25,6 +25,7 @@ Through SparQL queries (RDF-based data) searches will be requested. With this te
 
 ## Features
 * Filter based on category
+* Object caroussel 
 
 
 ## Code snippets
