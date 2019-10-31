@@ -1,17 +1,3 @@
-// new Glide('.glide').mount();
-
-
-
-// new Glide('.glide', {
-//     type: 'slider',
-//     startAt: 0,
-//     perView: 3,
-//     rewind: false,
-//     keyboard:false
-// }).mount();
-
-
-
 
 // search on keyname in object array
 function search(nameKey, array){

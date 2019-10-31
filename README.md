@@ -1,5 +1,6 @@
 # Angisa Tori
 Discover the secrets behind the Surinamese headscarves.
+This application will show you the meaning of a certain angisa.
 
 <img src="https://oege.ie.hva.nl/~westere6/techtrack/angisa.jpg" alt="logo">
 
@@ -8,46 +9,52 @@ The angisa is a typical Surinamese garment. This headpiece is considered the mos
 
 <img src="https://oege.ie.hva.nl/~westere6/techtrack/herdenkingsstof.jpg" alt="herdenkingsstof">
 
+## Live demo
+[You can find the live demo here](https://tropenmuseum.herokuapp.com/headscarves)
+
 ## Target audience of application
 The application is for anyone who is interested in the slavery history of Suriname.
 
 ## Data usage
-Data used within the application comes from the NMVW. The NMVW makes the data available and will be used to read object information that is related to Surinamese clothing.
+Data used within the application comes from the NMVW. The NMVW makes the data available and will be used to read 
+object information that is related to Surinamese headscarves.
 
 ## Data processing
 Through SparQL queries (RDF-based data) searches will be requested. With this technique it is possible to request certain information from the collection of world cultures.
 
-```
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-        PREFIX dc: <http://purl.org/dc/elements/1.1/>
-        PREFIX dct: <http://purl.org/dc/terms/>
-        PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-        PREFIX edm: <http://www.europeana.eu/schemas/edm/>
-        PREFIX foaf: <http://xmlns.com/foaf/0.1/>
-
-        SELECT ?cho ?title ?placeName ?type ?createdDate ?imageLink WHERE {
-            <https://hdl.handle.net/20.500.11840/termmaster5986> skos:narrower* ?place .
-            ?place skos:prefLabel ?placeName .
-
-            VALUES ?type { "Hoofddoek" "hoofddoek" "Angisa" "angisa" "Headgear" "headgear" "hoofddeksel" "Hoofddeksel" "Hoofddeksels" "hoofddeksels"}
-
-            ?cho dct:spatial ?place.
-            ?cho dc:title ?title.
-            ?cho dct:created ?createdDate.
-            ?cho foaf:depiction ?imageLink.
-            ?cho dc:type ?type .
-                FILTER langMatches(lang(?title), "ned")
-        }
-        LIMIT 20
-```
 ## Features
-...
+* Filter based on category
+
+
+## Code snippets
+* [How the headscarves get rendered]()
+* [How a single headscarf get rendered]()
+* [How the filter function works]()
+
+
+## Personal progression
+
+* Setup a framework
+* Understanding routes
+* Understanding components
+* Storing data in localstorage
+* Using fetch to call API GET request
+* Reading documentation of a framework
+* Searching the internet for answers
+
+
+## Have yet to learn
+
+* Ember.js usage of the controller
+* Ember.js usage of the model 
+* Ember.js usage of the adapter
+* Ember.js usage of serializers
+
 
 ## Wiki
-Lees [wiki](https://github.com/EyobDejene/frontend-applications/wiki) voor het gehele process. 
+Read [wiki](https://github.com/EyobDejene/frontend-applications/wiki) For the whole process. 
 
-## Live version
-Link to application []
+
 
 ## Prerequisites
 You will need the following things properly installed on your computer.
@@ -100,3 +107,5 @@ Specify what it takes to deploy your app.
 * Development Browser Extensions
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
+
+## Acknowledgements/credits
