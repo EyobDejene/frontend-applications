@@ -67,7 +67,7 @@ You will need the following things properly installed on your computer.
 * [Google Chrome](https://google.com/chrome/)
 
 ## Installation
-
+* `npm install -g ember-cli` to install Ember-CLI
 * `git clone <repository-url>` this repository
 * `cd frontend-applications`
 * `npm install`
